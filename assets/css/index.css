@@ -9,8 +9,13 @@
     color: white;
 }
 
+body {
+    height: 100vh;
+    background: #1B1822;
+}
+
 .bg-img {
-    height: 16em;
+    height: 35vh;
     width: 100%;
     object-fit: cover;
 }
@@ -56,6 +61,7 @@
 
 .links {
     padding-top: 2em;
+    padding-bottom: 4em;
 }
 
 .links > a {
