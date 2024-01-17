@@ -20,3 +20,11 @@ Duncan Frost:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/duncanspumpkin"
+Benjamin Sutas:
+  name:  "Benjamin Sutas"
+  bio:   "OpenLoco development team"
+  links:
+      - label: "GitHub"
+        icon: "fab fa-fw fa-github"
+        url: "https://github.com/leftofzen"
+  
