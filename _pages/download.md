@@ -4,7 +4,7 @@ tagline: "Get the latest and the greatest release here."
 layout: single
 classes: wide
 permalink: /download/
-latest_version: "24.05"
+latest_version: "24.05.1"
 ---
 
 # Downloading the game
