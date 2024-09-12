@@ -32,3 +32,5 @@ As of the writing of this blog post, the latest version of the editor is `3.2.1`
 - Editor
   - Cross-platform
   - Dark mode
+
+ ![image](https://github.com/user-attachments/assets/80cad57e-fa53-475b-90e3-3f72f7e7b0d3)
