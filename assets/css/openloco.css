@@ -72,5 +72,12 @@
         background: #424343;
         color: #eee;
     } 
+
+    .social-icons .fas, .social-icons .fab, .social-icons .far, .social-icons .fal {
+        color: white;
+    }
+    .social-icons .fa-rss, .social-icons .fa-rss-square {
+        color: #fa9b39;
+    }
         
 }
