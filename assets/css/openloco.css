@@ -1,1 +1,59 @@
 @-webkit-keyframes intro { } @keyframes intro { }
+
+@media (prefers-color-scheme: dark) {
+    
+    ::selection {
+      color: #fff;
+      background: #424343;
+    }
+    
+    body {
+        background: #222;
+        color: #eee;
+    }
+    
+    a {
+      color: #59d8ff;
+    }
+    
+    a:active,
+    a:hover {
+      color: #3f9db9;
+    }
+    
+    a:visited {
+      color: #59d8ff;
+    }
+
+    p>code,
+    a>code,
+    li>code,
+    figcaption>code,
+    td>code {
+      background:#4b4848;
+    }
+    
+    
+    .greedy-nav {
+        background: #222;
+    }
+    
+    .greedy-nav a {
+        color: #b3bfc8;
+    }
+    
+    .greedy-nav a:hover {
+        color: white;
+    }
+    
+    .masthead,
+    .page__content h2 {
+        border-bottom: 1px solid #424343;
+    }
+    
+    .page__footer {
+        background: #424343;
+        color: #eee;
+    } 
+        
+}
