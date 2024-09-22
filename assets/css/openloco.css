@@ -50,6 +50,22 @@
     .page__content h2 {
         border-bottom: 1px solid #424343;
     }
+
+    .pagination li a {
+        border: 1px solid #424343;
+    }
+    
+    .pagination li a:hover {
+      color: #59d8ff;
+    }
+    .pagination li a.disabled {
+        color: rgba(100,103,105,0.9);
+    }
+    
+    .pagination li a.current, .pagination li a.current.disabled {
+      color: #fff;
+      background: #424343;
+    }
     
     .page__footer {
         background: #424343;
