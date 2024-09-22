@@ -47,6 +47,7 @@
     }
     
     .masthead,
+    .archive__subtitle,
     .page__content h2 {
         border-bottom: 1px solid #424343;
     }
