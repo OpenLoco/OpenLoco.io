@@ -23,6 +23,7 @@ Duncan Frost:
 Benjamin Sutas:
   name:  "Benjamin Sutas"
   bio:   "OpenLoco development team"
+  avatar: "/assets/img/bio-leftofzen.jpg"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
