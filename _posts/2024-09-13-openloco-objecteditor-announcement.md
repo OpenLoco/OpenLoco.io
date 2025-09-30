@@ -23,6 +23,8 @@ now all you need to do to access it is click the `Online` tab in the editor.
 
 You can download the latest release of the object editor [here](https://github.com/OpenLoco/ObjectEditor/releases).
 
+![](/assets/img/object-editor-3.2.1.png)
+
 ## Main Features
 
 As of the writing of this blog post, the latest version of the editor is
