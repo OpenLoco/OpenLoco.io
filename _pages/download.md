@@ -16,13 +16,6 @@ The latest version of OpenLoco is v{{page.latest_version}}.<br>
 [Changelog](https://github.com/OpenLoco/OpenLoco/releases/v{{page.latest_version}}/)<br>
 [Release announcement](https://openloco.io/news/20{{page.latest_version | replace: ".", "/"}}/openloco-v{{page.latest_version}}.html)
 
-
-## Windows users
-
-The latest release can be downloaded from GitHub using the link below.
-Simply unzip the download to your preferred folder, e.g. `C:\Program Files\OpenLoco`.
-We recommend putting OpenLoco in a *different* folder than the the original Locomotion files.
-
 <a class="btn btn--large btn--success" id="download-link"
 	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-Win32.zip">
 	Download OpenLoco v{{page.latest_version}} for <span id="platform">Windows</span><br>
@@ -30,7 +23,7 @@ We recommend putting OpenLoco in a *different* folder than the the original Loco
 </a>
 
 <script type="text/javascript" defer>
-	const kBaseReleaseUrl = 'https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-%PLATFORM%.zip';
+	const kBaseReleaseUrl = 'https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-%PLATFORM%.%EXT%';
 
 	const kPlatform = window.navigator.platform;
 	const kMacOsPlatforms = ['macOS', 'Macintosh', 'MacIntel'];
@@ -38,9 +31,9 @@ We recommend putting OpenLoco in a *different* folder than the the original Loco
 
 	// TODO: verify/expand the following before release
 	const kSupportedPlatforms = {
-		linux:   { 'url_keyword': 'linux', 'label': 'Debian',  'byline': '64-bits, Intel x86-64' },
-		macos:   { 'url_keyword': 'macos', 'label': 'macOS',   'byline': '64-bits, Apple Silicon' },
-		windows: { 'url_keyword': 'win64', 'label': 'Windows', 'byline': '64-bits, Intel x86-64' },
+		linux:   { 'url_keyword': 'linux', 'ext': 'deb', 'label': 'Debian',  'byline': '64-bits, Intel x86-64' },
+		macos:   { 'url_keyword': 'macos', 'ext': 'zip', 'label': 'macOS',   'byline': '64-bits, Apple Silicon' },
+		windows: { 'url_keyword': 'win64', 'ext': 'zip', 'label': 'Windows', 'byline': '64-bits, Intel x86-64' },
 	};
 
 	let platform = null, suggestedReleaseUrl = null;
@@ -53,7 +46,7 @@ We recommend putting OpenLoco in a *different* folder than the the original Loco
 	}
 
 	const kDownloadLink = document.getElementById('download-link');
-	kDownloadLink.href = kBaseReleaseUrl.replace('%PLATFORM%', platform.url_keyword);
+	kDownloadLink.href = kBaseReleaseUrl.replace('%PLATFORM%', platform.url_keyword).replace('%EXT%', platform.ext);
 
 	const kPlatformLabel = document.getElementById('platform');
 	kPlatformLabel.textContent = platform.label;
@@ -66,13 +59,60 @@ Alternatively, IntelOrca's [OpenLauncher](https://github.com/IntelOrca/OpenLaunc
 to automatically stay up-to-date with the latest OpenLoco release.
 
 
-## macOS users
+## For Windows
 
-As we are still working on reimplementing *Locomotion* in C++, we can only provide 32-bits builds.
-For this reason, we cannot provide native builds for macOS. However, the game can be run at full performance
-[using Wine](https://github.com/OpenLoco/OpenLoco/wiki/Running-OpenLoco-on-macOS) to run the Windows releases.
-Wine taps into [Rosetta](https://support.apple.com/en-us/HT211861), which takes care of translating our Intel builds to Apple Silicon as well.
+The latest release can be downloaded from GitHub using the links below.
+For best performance, please use the 64-bit version if your OS supports it.
 
-## Linux and BSD
+To install OpenLoco, extract the zip file found below to your preferred folder, e.g. `C:\Program Files\OpenLoco`.
+We recommend putting OpenLoco in a *different* folder than the the original Locomotion files.
 
-For Linux and BSD distributions, we currently do not provide any builds. CMake may be used to compile builds for your platform. Please refer to the [README file on GitHub](https://github.com/OpenLoco/OpenLoco#linux-1) for details.
+<a class="btn btn--success" id="download-link"
+	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-Win32.zip">
+	Download OpenLoco v{{page.latest_version}} for Windows<br>
+	<span style="font-size: 0.75rem; font-weight: normal">(.zip, 32-bits, Intel x86)</span>
+</a>
+<a class="btn btn--success" id="download-link"
+	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-Win64.zip">
+	Download OpenLoco v{{page.latest_version}} for Windows<br>
+	<span style="font-size: 0.75rem; font-weight: normal">(.zip, 64-bits, Intel x86-64)</span>
+</a>
+
+
+## For macOS
+
+The latest release can be downloaded from GitHub using the links below.
+We support Apple Silicon processors (M1 onwards).
+
+To install OpenLoco, extract the zip file found below, and move `OpenLoco.app` to your preferred folder,
+e.g.&nbsp;`/Applications`.
+Currently, this app bundle is not signed. You may need to add a GateKeeper exception
+in order to open it, e.g.:
+```
+$ xattr -d com.apple.quarantine OpenLoco.app
+```
+
+Please note that a copy of the original Locomotion files is required. We recommend putting these in
+a different folder, e.g. somewhere in your user folder.
+
+<a class="btn btn--success" id="download-link"
+	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-macos.zip">
+	Download OpenLoco v{{page.latest_version}} for macOS<br>
+	<span style="font-size: 0.75rem; font-weight: normal">(.zip, 64-bits, Apple Silicon)</span>
+</a>
+
+
+## For Linux/BSD
+
+We currently provide release builds for Intel 64-bit builds of Ubuntu.
+On other platforms, CMake may be used to compile builds for your platform.
+Please refer to the [README file on GitHub](https://github.com/OpenLoco/OpenLoco#linux-1) for details.
+
+Please note that a copy of the original Locomotion files is required. We recommend putting these in
+a different folder, e.g. somewhere in your home directory.
+
+<a class="btn btn--success" id="download-link"
+	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-ubuntu.deb">
+	Download OpenLoco v{{page.latest_version}} for Ubuntu<br>
+	<span style="font-size: 0.75rem; font-weight: normal">(.deb, 64-bits, Intel x86-64)</span>
+</a>
