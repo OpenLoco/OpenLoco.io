@@ -68,14 +68,14 @@ To install OpenLoco, extract the zip file found below to your preferred folder, 
 We recommend putting OpenLoco in a *different* folder than the the original Locomotion files.
 
 <a class="btn btn--success" id="download-link"
-	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-Win32.zip">
-	Download OpenLoco v{{page.latest_version}} for Windows<br>
-	<span style="font-size: 0.75rem; font-weight: normal">(.zip, 32-bits, Intel x86)</span>
-</a>
-<a class="btn btn--success" id="download-link"
 	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-Win64.zip">
 	Download OpenLoco v{{page.latest_version}} for Windows<br>
 	<span style="font-size: 0.75rem; font-weight: normal">(.zip, 64-bits, Intel x86-64)</span>
+</a>
+<a class="btn btn--success" id="download-link"
+	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-Win32.zip">
+	Download OpenLoco v{{page.latest_version}} for Windows<br>
+	<span style="font-size: 0.75rem; font-weight: normal">(.zip, 32-bits, Intel x86)</span>
 </a>
 
 
