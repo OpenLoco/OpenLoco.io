@@ -52,7 +52,7 @@ The latest version of OpenLoco is v{{page.latest_version}}.<br>
 	kPlatformLabel.textContent = platform.label;
 
 	const kBylineLabel = document.getElementById('platform-byline');
-	kBylineLabel.textContent = platform.byline;
+	kBylineLabel.textContent = .${platform.ext}, ${platform.byline}`;
 </script>
 
 Alternatively, IntelOrca's [OpenLauncher](https://github.com/IntelOrca/OpenLauncher) can be used
