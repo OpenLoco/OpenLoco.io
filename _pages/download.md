@@ -65,7 +65,9 @@ The latest release can be downloaded from GitHub using the links below.
 For best performance, please use the 64-bit version if your OS supports it.
 
 To install OpenLoco, extract the zip file found below to your preferred folder, e.g. `C:\Program Files\OpenLoco`.
-We recommend putting OpenLoco in a *different* folder than the the original Locomotion files.
+
+Please note that a copy of the original Locomotion files is required for graphics/music/sound assets.
+We recommend putting OpenLoco in a *different* folder than the original Locomotion files.
 
 <a class="btn btn--success" id="download-link"
 	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-Win64.zip">
@@ -92,8 +94,8 @@ in order to open it, e.g.:
 $ xattr -d com.apple.quarantine OpenLoco.app
 ```
 
-Please note that a copy of the original Locomotion files is required. We recommend putting these in
-a different folder, e.g. somewhere in your user folder.
+Please note that a copy of the original Locomotion files is required for graphics/music/sound assets.
+We recommend putting these in a different folder to OpenLoco, e.g. somewhere in your user folder.
 
 <a class="btn btn--success" id="download-link"
 	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-macos.zip">
@@ -108,8 +110,8 @@ We currently provide release builds for Intel 64-bit builds of Ubuntu.
 On other platforms, CMake may be used to compile builds for your platform.
 Please refer to the [README file on GitHub](https://github.com/OpenLoco/OpenLoco#linux-1) for details.
 
-Please note that a copy of the original Locomotion files is required. We recommend putting these in
-a different folder, e.g. somewhere in your home directory.
+Please note that a copy of the original Locomotion files is required for graphics/music/sound assets.
+We recommend putting these in a different folder to OpenLoco, e.g. somewhere in your home directory.
 
 <a class="btn btn--success" id="download-link"
 	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-ubuntu.deb">
