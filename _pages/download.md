@@ -17,7 +17,7 @@ The latest version of OpenLoco is v{{page.latest_version}}.<br>
 [Release announcement](https://openloco.io/news/20{{page.latest_version | replace: ".", "/"}}/openloco-v{{page.latest_version}}.html)
 
 <a class="btn btn--large btn--success" id="download-link"
-	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-Win32.zip">
+	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-windows-portable-x64.zip">
 	Download OpenLoco v{{page.latest_version}} for <span id="platform">Windows</span><br>
 	<span id="platform-byline" style="font-size: 0.75rem; font-weight: normal">(.zip, 32-bits, Intel x86)</span>
 </a>
@@ -31,8 +31,8 @@ The latest version of OpenLoco is v{{page.latest_version}}.<br>
 
 	// TODO: verify/expand the following before release
 	const kSupportedPlatforms = {
-		macos:   { 'url_keyword': 'macos', 'ext': 'zip', 'label': 'macOS',   'byline': '64-bits, Apple Silicon' },
-		windows: { 'url_keyword': 'win64', 'ext': 'zip', 'label': 'Windows', 'byline': '64-bits, Intel x86-64' },
+		macos:   { 'url_keyword': 'macos-arm64',          'ext': 'zip', 'label': 'macOS',   'byline': '64-bits, Apple Silicon' },
+		windows: { 'url_keyword': 'windows-portable-x64', 'ext': 'zip', 'label': 'Windows', 'byline': '64-bits, Intel x86-64' },
 	};
 
 	let platform = null, suggestedReleaseUrl = null;
@@ -49,7 +49,7 @@ The latest version of OpenLoco is v{{page.latest_version}}.<br>
 	kPlatformLabel.textContent = platform.label;
 
 	const kBylineLabel = document.getElementById('platform-byline');
-	kBylineLabel.textContent = .${platform.ext}, ${platform.byline}`;
+	kBylineLabel.textContent = `${platform.ext}, ${platform.byline}`;
 </script>
 
 Alternatively, IntelOrca's [OpenLauncher](https://github.com/IntelOrca/OpenLauncher) can be used
@@ -67,12 +67,12 @@ Please note that a copy of the original Locomotion files is required for graphic
 We recommend putting OpenLoco in a *different* folder than the original Locomotion files.
 
 <a class="btn btn--success" id="download-link"
-	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-Win64.zip">
+	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-windows-portable-x64.zip">
 	Download OpenLoco v{{page.latest_version}} for Windows<br>
 	<span style="font-size: 0.75rem; font-weight: normal">(.zip, 64-bits, Intel x86-64)</span>
 </a>
 <a class="btn btn--success" id="download-link"
-	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-Win32.zip">
+	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-windows-portable-win32.zip">
 	Download OpenLoco v{{page.latest_version}} for Windows<br>
 	<span style="font-size: 0.75rem; font-weight: normal">(.zip, 32-bits, Intel x86)</span>
 </a>
@@ -95,7 +95,7 @@ Please note that a copy of the original Locomotion files is required for graphic
 We recommend putting these in a different folder to OpenLoco, e.g. somewhere in your user folder.
 
 <a class="btn btn--success" id="download-link"
-	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-macos.zip">
+	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-macos-arm64.zip">
 	Download OpenLoco v{{page.latest_version}} for macOS<br>
 	<span style="font-size: 0.75rem; font-weight: normal">(.zip, 64-bits, Apple Silicon)</span>
 </a>
