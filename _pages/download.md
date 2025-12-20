@@ -103,15 +103,9 @@ We recommend putting these in a different folder to OpenLoco, e.g. somewhere in 
 
 ## For Linux/BSD
 
-We currently provide release builds for Intel 64-bit builds of Ubuntu.
-On other platforms, CMake may be used to compile builds for your platform.
-Please refer to the [README file on GitHub](https://github.com/OpenLoco/OpenLoco#linux-1) for details.
+Currently, we support various distros of Linux and BSD, but do not yet provide any release builds for them.
+In the mean time, CMake can be used to compile builds for your platform.
+For details, please refer to the [README file on GitHub](https://github.com/OpenLoco/OpenLoco#linux-1).
 
 Please note that a copy of the original Locomotion files is required for graphics/music/sound assets.
 We recommend putting these in a different folder to OpenLoco, e.g. somewhere in your home directory.
-
-<a class="btn btn--success" id="download-link"
-	href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-ubuntu.deb">
-	Download OpenLoco v{{page.latest_version}} for Ubuntu<br>
-	<span style="font-size: 0.75rem; font-weight: normal">(.deb, 64-bits, Intel x86-64)</span>
-</a>
