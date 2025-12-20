@@ -31,7 +31,6 @@ The latest version of OpenLoco is v{{page.latest_version}}.<br>
 
 	// TODO: verify/expand the following before release
 	const kSupportedPlatforms = {
-		linux:   { 'url_keyword': 'linux', 'ext': 'deb', 'label': 'Debian',  'byline': '64-bits, Intel x86-64' },
 		macos:   { 'url_keyword': 'macos', 'ext': 'zip', 'label': 'macOS',   'byline': '64-bits, Apple Silicon' },
 		windows: { 'url_keyword': 'win64', 'ext': 'zip', 'label': 'Windows', 'byline': '64-bits, Intel x86-64' },
 	};
@@ -39,8 +38,6 @@ The latest version of OpenLoco is v{{page.latest_version}}.<br>
 	let platform = null, suggestedReleaseUrl = null;
 	if (kMacOsPlatforms.indexOf(kPlatform) !== -1) {
 		platform = kSupportedPlatforms['macos'];
-	} else if (/Linux/.test(kPlatform)) {
-		platform = kSupportedPlatforms['linux'];
 	} else {
 		platform = kSupportedPlatforms['windows'];
 	}
