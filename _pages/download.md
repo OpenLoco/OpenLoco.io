@@ -31,6 +31,7 @@ The latest version of OpenLoco is v{{page.latest_version}}.<br>
 
 	// TODO: verify/expand the following before release
 	const kSupportedPlatforms = {
+		linux:   { 'url_keyword': 'linux',                'ext': 'deb', 'label': 'Debian',  'byline': '64-bits, Intel x86-64' },
 		macos:   { 'url_keyword': 'macos-arm64',          'ext': 'zip', 'label': 'macOS',   'byline': '64-bits, Apple Silicon' },
 		windows: { 'url_keyword': 'windows-portable-x64', 'ext': 'zip', 'label': 'Windows', 'byline': '64-bits, Intel x86-64' },
 	};
@@ -103,9 +104,15 @@ We recommend putting these in a different folder to OpenLoco, e.g. somewhere in 
 
 ## For Linux/BSD
 
-Currently, we support various distros of Linux and BSD, but do not yet provide any release builds for them.
-In the mean time, CMake can be used to compile builds for your platform.
-For details, please refer to the [README file on GitHub](https://github.com/OpenLoco/OpenLoco#linux-1).
+We currently provide release builds for Intel 64-bit builds of Ubuntu.
+On other platforms, CMake may be used to compile builds for your platform.
+Please refer to the [README file on GitHub](https://github.com/OpenLoco/OpenLoco#linux-1) for details.
 
 Please note that a copy of the original Locomotion files is required for graphics/music/sound assets.
 We recommend putting these in a different folder to OpenLoco, e.g. somewhere in your home directory.
+
+<a class="btn btn--success" id="download-link"
+       href="https://github.com/OpenLoco/OpenLoco/releases/download/v{{page.latest_version}}/OpenLoco-v{{page.latest_version}}-ubuntu.deb">
+       Download OpenLoco v{{page.latest_version}} for Ubuntu<br>
+       <span style="font-size: 0.75rem; font-weight: normal">(.deb, 64-bits, Intel x86-64)</span>
+</a>
