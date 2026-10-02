@@ -53,7 +53,7 @@ The latest version of OpenLoco is v{{page.latest_version}}.<br>
 	kBylineLabel.textContent = `${platform.ext}, ${platform.byline}`;
 </script>
 
-Alternatively, IntelOrca's [OpenLauncher](https://github.com/IntelOrca/OpenLauncher) can be used
+Alternatively, IntelOrca's [OpenLauncher](https://openrct2.io/download/launcher) can be used
 to automatically stay up-to-date with the latest OpenLoco release.
 
 
