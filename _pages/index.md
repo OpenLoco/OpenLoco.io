@@ -1,6 +1,6 @@
 ---
 title: "Welcome to OpenLoco"
-tagline: "We are making a modern, open source version of the classic transport simulation game *Chris Sawyer's Locomotion* by reimplementing it in C++."
+tagline: "A modern, open source version of the classic transport simulation game *Chris Sawyer's Locomotion* reimplemented in C++."
 layout: splash
 classes: wide
 permalink: /
