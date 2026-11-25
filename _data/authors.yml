@@ -28,4 +28,11 @@ Benjamin Sutas:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/leftofzen"
-  
+LeeSpork:
+  name:  "LeeSpork"
+  bio:   "OpenLoco development team"
+  avatar: "/assets/img/bio-leespork.png"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/LeeSpork"
